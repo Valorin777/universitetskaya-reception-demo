@@ -677,3 +677,6 @@
     margin: 0 0 10px 14px;
   }
 }
+@media (max-width: 480px) {
+  .ac-stage-btn span:last-of-type {max-width:100%;hyphens:auto;overflow-wrap:anywhere}
+}
