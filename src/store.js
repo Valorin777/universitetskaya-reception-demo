@@ -212,6 +212,37 @@ function seed() {
     ],
   };
   initializeCrm(initial);
+  initial.crmDeals.push(
+    {
+      id: 'D-1201',
+      title: 'Размещение участников семинара',
+      name: names[1],
+      phone: phone(1),
+      email: '',
+      source: 'phone',
+      sourceInquiryId: '',
+      stage: 'proposal',
+      amount: 48000,
+      description:
+        'Предложение на восемь номеров для участников семинара. Ожидаем ответ по датам.',
+      createdAt: dayOffset(-2),
+      updatedAt: today(),
+    },
+    {
+      id: 'D-1202',
+      title: 'Укладка для гостьи',
+      name: names[8],
+      phone: phone(8),
+      email: '',
+      source: 'desk',
+      sourceInquiryId: '',
+      stage: 'won',
+      amount: 1700,
+      description: 'Гостья подтвердила услугу на стойке регистрации.',
+      createdAt: dayOffset(-2),
+      updatedAt: dayOffset(-1),
+    },
+  );
   initial.crmTasks.push({
     id: 'T-Q-1084',
     dealId: 'D-Q-1084',
